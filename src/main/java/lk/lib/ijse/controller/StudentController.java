@@ -20,7 +20,7 @@ public class StudentController {
     public void addStudent(@RequestBody StudentDTO studentDTO){
         System.out.println(studentDTO.getRegId());
         studentService.addStudent(studentDTO);
-
+        System.out.println("Ashan");
     }
 
     @GetMapping("/all")
